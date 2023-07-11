@@ -7,6 +7,7 @@ const symbols_el = document.querySelector("#symbols");
 
 const generate_btn = document.querySelector("#generate");
 generate_btn.addEventListener("click", gereratePassword);
+
 const copy_btn = document.querySelector("#copy");
 copy_btn.addEventListener("click", copyPassword);
 
