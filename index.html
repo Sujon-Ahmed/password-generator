@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sujon Ahmed" />
+    <meta name="description" content="Password Generator" />
+    <title>Password Generator</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Material icon cdn -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="generator">
+        <h1 class="heading-title">Password Generator</h1>
+        <!-- password generate wrapper -->
+        <label class="password-wrap">
+          <input
+            type="text"
+            readonly
+            id="password"
+            placeholder="Generate a password"
+          />
+          <button class="material-icons" id="copy">content_copy</button>
+        </label>
+        <!-- password length -->
+        <label>
+          <span>Password Length:</span>
+          <input type="number" id="length" value="16" />
+        </label>
+        <!-- uppercase -->
+        <label for="uppercase">
+          <span>Include Uppercase Letters:</span>
+          <input type="checkbox" id="uppercase" checked />
+        </label>
+        <!-- lowercase -->
+        <label for="lowercase">
+          <span>Include Lowercase Letters:</span>
+          <input type="checkbox" id="lowercase" checked />
+        </label>
+        <!-- numbers -->
+        <label for="numbers">
+          <span>Include Numbers:</span>
+          <input type="checkbox" id="numbers" checked />
+        </label>
+        <!-- symbols -->
+        <label for="symbols">
+          <span>Include Symbols:</span>
+          <input type="checkbox" id="symbols" checked />
+        </label>
+        <!-- generate password button -->
+        <button type="submit" id="generate">Generate Password</button>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
